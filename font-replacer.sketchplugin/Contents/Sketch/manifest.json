@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "name": "Font Changer and Replacer",
+  "description": "Replace one font with another across your selection, page or entire Sketch document.",
+  "author": "varundevpro",
+  "identifier": "com.varundevpro.sketch.font-replacer-native",
+  "icon": "icon-light.png",
+  "darkIcon": "icon-dark.png",
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Font Changer and Replacer",
+      "identifier": "font-replacer-native.open",
+      "script": "command.js",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "Shutdown": "onShutdown"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Font Replacer Native",
+    "items": [
+      "font-replacer-native.open"
+    ]
+  },
+  "version": "0.1.11",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}
